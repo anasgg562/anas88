@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÞÑÂה Çב‗Ñםד Úבל ÑזÍ ÌÏם דÍדזÏ ÌבÇב ÇבÏםה</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ÞÑÂה ‗Ñםד Úבל ÑזÍ ÌÏם דÍדזÏ ÌבÇב ÇבÏםה</h1> 
+  <div id="main">
+        <button onclick="showSection('readQuran')">ÇÞÑÃ ÇבÞÑÂה</button>
+        <button onclick="showSection('listenQuran')">ÇÓÊדÚ בבÞÑÂה</button>
+    </div>
+    
+    <div id="readQuran" class="section" style="display:none;">
+        <div id="controls">
+            <button id="increaseFont">Ê‗ÈםÑ ÇבהÕ</button>
+            <button id="decreaseFont">ÊÕÛםÑ ÇבהÕ</button>
+        </div>
+        <div id="quran"></div>
+    </div>
+    
+    <div id="listenQuran" class="section" style="display:none;">
+        <h2>ÇÎÊÑ ÇבÓזÑÉ בבÇÓÊדÇÚ</h2>
+        <ul id="surahList"></ul>
+        <audio id="audioPlayer" controls style="width: 100%; margin-top: 20px;">
+            <source id="audioSource" src="" type="audio/mpeg">
+            דÊÕÝÍ‗ בÇ םÏÚד ÊÔÛםב ÇבÕזÊ.
+        </audio>
+        <div class="sleep-timer">
+            <label for="sleepTimer">דÄÞÊ Çבהזד (ÈÇבÏÞÇÆÞ):</label>
+            <input type="number" id="sleepTimer" min="1" max="120">
+            <button id="setSleepTimer">ÊÚםםה ÇבדÄÞÊ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
